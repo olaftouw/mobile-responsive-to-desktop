@@ -1,0 +1,205 @@
+/* olaf Touw applicatie ontwikkeling niveau 4 Da Vinci College Gorinchem */
+*{
+	margin: 0;
+	padding: 0;
+}
+/*----------MOBILE VERSION---------*/
+body{
+  	width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: 'Archivo', sans-serif;
+}
+/*-------- Menu ---------*/
+.show {   /* hier laat hij de dropdown zien deze is gekoppelt aan het stukje javascript */
+  display:block;
+}
+.dropButton:hover, .dropButton:focus {   /* de knop word transparent als je hovert en als je er op klikt(focus) blijft hij transparent */
+  background-color: transparent;
+}
+.dropDownC{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropDown{
+  background-color: #e4cd1b;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: inline-block;
+}
+.dropButton{
+  background-color: transparent;
+  color: silver;
+  padding: 1em;
+  border-style: solid;
+  border-width: 0.1px;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.dropDownC a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropDownC a:hover {  /* dit geeft een kleur over als je met je muis hovert */
+  background-color: #ddd;
+}
+/*--------------menu end---------------*/
+.logo{
+  background-color: white;
+  height: 80px;
+  position: relative;
+}
+.img-logo{
+  float: right;
+  width: 200px;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 50px;
+  position: relative;
+}
+h1{
+  margin-left: 10px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: 'Archivo', sans-serif;
+}
+div.article{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80%;
+  
+}
+hr{   /* dit staat voor de lijn onder een h1 */
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+button.button1{
+  font-size: 25px;
+  background-color: #e4cd1b;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+iframe{   /*dit is de youtube video */
+  margin-top: 50px;
+  margin-left: 5%;
+  width: 90%;
+}
+/*--------------Slide Show-------------*/
+.w3-display-container {
+	width: 100%;
+}
+.carSlide{
+	width: 100%;
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor:pointer;
+}
+.w3-badge {
+	height:13px;
+	width:13px;
+	padding:0;
+}
+/*-------------Slide End--------------*/
+.dropDownC{   /* dit laat de menu in de mobile versie verbergen */
+   display: none;
+}
+.menu{
+	 margin-top: 10px; 
+	 display: inline-block;
+	 font-size: 1.2em;
+	 margin-right: 50px;
+	 display: none;
+}
+footer{
+  width: 100%;
+  height: 25px;
+  background-color: #e4cd1b;
+  text-align: center;
+}
+/*-------------MOBILE END-------------*/
+
+/*-------------DESKTOP VERSION------------*/
+@media only screen and (min-width: 720px){  /* dit is de desktop versie */
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.img-logo{
+  float: left;
+  margin-left: 50px;
+  overflow-x: hidden;
+
+}
+button{   /* hier worden de mobile buttons verborgen */
+    display: none;
+}
+.dropDown{
+    height: 50px;
+}
+.dropDownC{
+	width: 100%;
+    display: inline;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.dropDownC a{
+    display: inline;
+	width: 100%;
+}
+.dropDown{
+	display: inline;
+}
+.menu{
+	margin-left: 550px;
+	display: block;
+}
+.menu p{
+    margin-top: 10px;
+    display: inline;
+    font-size: 0.7em;
+    margin-right: 50px;
+		width: 100%;
+}
+.dropDown{
+    display: inline-block;
+    width: 100%;
+}
+  div.proefles{
+    margin-left: 5%;
+    width: 30%;
+    display: inline-block;
+}
+div.locatie{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+div.rijles{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+iframe{   /*dit is de youtube video */
+    margin-left: 12.5%;
+    width: 75%;
+    height: 500px;
+}
+}
+/*--------------DESKTOP END-----------*/
